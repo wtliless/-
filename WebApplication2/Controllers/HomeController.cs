@@ -32,8 +32,6 @@ namespace WebApplication2.Controllers
             instance instance = new instance();
             instance.tests();
 
-
-
             return View();
         }
     }
@@ -53,8 +51,8 @@ namespace WebApplication2.Controllers
     {
         public override void test()
         {
-            
-            throw new NotImplementedException();    
+
+            throw new NotImplementedException();
         }
 
     }
