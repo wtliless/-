@@ -31,6 +31,35 @@ namespace EventTest
         }
     }
 
+
+    public class TestDelegate
+    {
+        // namespace a delegate
+        delegate void Del(int num);
+        // create a method
+        public  void DelMethod(int num)
+        {
+
+        }
+
+        // instantiate a delegate
+        public void InvokeMethod()
+        {
+            Del del = DelMethod;
+            del(123123);
+
+            ((Del)delegate (int num)
+                        {
+
+                        })(11);
+
+
+            Del del2 = x => { };
+            del2(1232);
+        
+        }
+    }
+
     /// <summary>
     /// 首领A举杯委托
     /// </summary>
@@ -92,6 +121,12 @@ namespace EventTest
             this.a = a;
             a.RaiseEvent += new RaiseEventHandler(a_RaiseEvent); // 订阅举杯事件
             a.FallEvent += new FallEventHandler(a_FallEvent); // 订阅摔杯事件
+
+
+            a.RaiseEvent +=(e)=>
+            {
+
+            };
         }
         /// <summary>
         /// 首领举杯时的动作
