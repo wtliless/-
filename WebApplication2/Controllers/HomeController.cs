@@ -8,10 +8,18 @@ namespace WebApplication2.Controllers
 {
     public class HomeController : Controller
     {
+
+        public ViewResult ViewResult(string sss)
+        {
+            return null;
+        }
+
         public ActionResult Index()
         {
             //return View();
+            var test1 = System.Web.Hosting.HostingEnvironment.ApplicationPhysicalPath;
 
+            var test = System.Web.HttpContext.Current.Request.PhysicalApplicationPath;
             return RedirectToAction("About", "Home");
         }
 
@@ -30,32 +38,53 @@ namespace WebApplication2.Controllers
             test1.Testdtr();
             Test1.Test();
             instance instance = new instance();
-            instance.tests();
+            instance.Tests();
 
             return View();
         }
     }
 
 
-    public abstract class abstractTest
+    public abstract class AbstractTest
     {
-        public abstract void test();
+        public abstract void Test();
 
-        public void tests()
+        public void Tests()
         {
 
         }
+
+        public static void Ss()
+        {
+
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 
-    public class instance : abstractTest
+    public class instance : AbstractTest
     {
-        public override void test()
+        public override void Test()
         {
 
             throw new NotImplementedException();
         }
 
     }
+
 
     public static class Test
     {
@@ -75,6 +104,26 @@ namespace WebApplication2.Controllers
         public string Testdtr()
         {
             return null;
+        }
+
+        Singer Singer = Singer.SingerInstance();
+    }
+
+    public class Singer
+    {
+        public static Singer SingerInstance()
+        {
+            return null;
+        }
+
+        private Singer()
+        {
+
+        }
+
+        public void SIngerTest()
+        {
+
         }
     }
 }
