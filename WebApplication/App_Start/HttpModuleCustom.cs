@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
-using Microsoft.AspNet.SignalR;
 
-namespace WebApplication2.App_Start
+namespace WebApplicationForMVC.App_Start
 {
     public class HttpModuleCustom : IHttpModule
     {

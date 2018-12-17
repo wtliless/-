@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DotNetEvents;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,9 @@ namespace EventTest
 
         static void Main(string[] args)
         {
+            ProgramTest test = new ProgramTest();
+            test.Main();
+
             A a = new A(); // 定义首领A
 
             B b = new B(a); // 定义部下B
@@ -32,6 +36,9 @@ namespace EventTest
     }
 
 
+    /// <summary>
+    /// 委托的三种方式   声明委托，创建委托的方法，实例化委托，委托调用
+    /// </summary>
     public class TestDelegate
     {
         // namespace a delegate
@@ -47,6 +54,11 @@ namespace EventTest
         {
             Del del = DelMethod;
             del(123123);
+
+            Del dels = delegate (int num)
+            {
+
+            };
 
             ((Del)delegate (int num)
                         {
