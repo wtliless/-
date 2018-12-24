@@ -1,5 +1,4 @@
-﻿using DotNetEvents;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace EventTest
 {
+    using DotNetEvents;
+
     class Program
     {
 
         static void Main(string[] args)
         {
+            ProgramTest.TestStaticMethod();
+
             ProgramTest test = new ProgramTest();
             test.Main();
-
             A a = new A(); // 定义首领A
 
             B b = new B(a); // 定义部下B

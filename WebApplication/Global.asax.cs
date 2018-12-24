@@ -11,7 +11,7 @@ namespace WebApplicationForMVC
             //var test1 = System.Web.Hosting.HostingEnvironment.ApplicationPhysicalPath;
 
             //var test = System.Web.HttpContext.Current.Request.PhysicalApplicationPath;
-
+            System.Collections.Generic.List
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

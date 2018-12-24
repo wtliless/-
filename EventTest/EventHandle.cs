@@ -104,5 +104,25 @@
             Console.ReadLine();
 
         }
+
+
+        public void TestNoStaticMethod()
+        {
+
+        }
+
+        public static void TestStaticMethod()
+        {
+            ProgramTest programTest = new ProgramTest();
+            programTest.TestNoStaticMethod();
+        }
+    }
+
+    public class TestStaticClass
+    {
+        //public static void TestStaticMethod()
+        //{
+        //    TestNoStaticMethod();
+        //}
     }
 }

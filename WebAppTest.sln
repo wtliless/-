@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTest", "EventTest\Even
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationForMVC", "WebApplication\WebApplicationForMVC.csproj", "{390378DE-31F4-4AC9-A42C-5D971A8B9BBC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List", "List\List.csproj", "{D713B616-088E-4F3B-A95E-DC4DECBEC2F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{390378DE-31F4-4AC9-A42C-5D971A8B9BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{390378DE-31F4-4AC9-A42C-5D971A8B9BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{390378DE-31F4-4AC9-A42C-5D971A8B9BBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D713B616-088E-4F3B-A95E-DC4DECBEC2F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D713B616-088E-4F3B-A95E-DC4DECBEC2F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D713B616-088E-4F3B-A95E-DC4DECBEC2F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D713B616-088E-4F3B-A95E-DC4DECBEC2F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
